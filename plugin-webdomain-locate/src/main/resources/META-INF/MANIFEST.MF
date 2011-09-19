@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Export-Package: com.gfactor.locate;version="1.0.0";uses:="com.gfactor.
+ pageinfo.jpa"
+Unversioned-Imports: *
+Built-By: momo
+Tool: Bnd-1.43.0
+Bundle-Name: Spring OSGi Bundle
+Created-By: Apache Maven Bundle Plugin
+Bundle-Version: 1.0.0
+Build-Jdk: 1.6.0_26
+Bnd-LastModified: 1313735536031
+Bundle-ManifestVersion: 2
+Import-Package: com.gfactor.pageinfo.jpa,com.gfactor.pageinfo.service,
+ org.osgi.framework,org.slf4j,org.springframework.beans.factory.annota
+ tion,org.springframework.osgi.context
+Bundle-SymbolicName: plugin-webdomain-locate
+

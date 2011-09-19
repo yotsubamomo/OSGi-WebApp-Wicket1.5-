@@ -1,0 +1,88 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: 1.5.0_22 (Sun Microsystems Inc.)
+Built-By: igor
+Build-Jdk: 1.5.0_22
+Specification-Title: Wicket Core
+Specification-Version: 1.5.0
+Specification-Vendor: Apache Software Foundation
+Implementation-Title: Wicket Core
+Implementation-Version: 1.5.0
+Implementation-Vendor-Id: org.apache.wicket
+Implementation-Vendor: Apache Software Foundation
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Import-Package: org.apache.wicket,org.apache.wicket.request.flow,
+ org.apache.wicket.request.http,org.apache.wicket.request.http.handler,
+ org.apache.wicket.request.mapper.info,org.apache.wicket.request.mapper.mount,org.apache.wic
+ ket.request.mapper.parameter,org.apache.wicket.serialize,org.apache.w
+ icket.util,org.apache.wicket.util.collections,org.apache.wicket.util.
+ convert,org.apache.wicket.util.convert.converter,org.apache.wicket.ut
+ il.diff,org.apache.wicket.util.listener,org.apache.wicket.util.parse.
+ metapattern,org.apache.wicket.util.parse.metapattern.parsers,org.apac
+ he.wicket.util.time,org.apache.wicket.util.upload,org.apache.wicket.u
+ til.value,org.apache.wicket.util.visit,org.apache.wicket.util.watch
+Bnd-LastModified: 1314977204960
+Export-Package: org.apache.wicket,org.apache.wicket.ajax,org.apache.wi
+ cket.ajax.calldecorator,org.apache.wicket.ajax.form,org.apache.wicket
+ .ajax.markup.html,org.apache.wicket.ajax.markup.html.form,org.apache.
+ wicket.ajax.markup.html.navigation.paging,org.apache.wicket.applicati
+ on,org.apache.wicket.authentication,org.apache.wicket.authentication.
+ strategy,org.apache.wicket.authorization,org.apache.wicket.authorizat
+ ion.strategies,org.apache.wicket.authorization.strategies.action,org.
+ apache.wicket.authorization.strategies.page,org.apache.wicket.behavio
+ r,org.apache.wicket.css,org.apache.wicket.event,org.apache.wicket.fee
+ dback,org.apache.wicket.javascript,org.apache.wicket.markup,org.apach
+ e.wicket.markup.html,org.apache.wicket.markup.html.basic,org.apache.w
+ icket.markup.html.border,org.apache.wicket.markup.html.debug,org.apac
+ he.wicket.markup.html.form,org.apache.wicket.markup.html.form.upload,
+ org.apache.wicket.markup.html.form.validation,org.apache.wicket.marku
+ p.html.image,org.apache.wicket.markup.html.image.resource,org.apache.
+ wicket.markup.html.include,org.apache.wicket.markup.html.internal,org
+ .apache.wicket.markup.html.link,org.apache.wicket.markup.html.list,or
+ g.apache.wicket.markup.html.navigation.paging,org.apache.wicket.marku
+ p.html.pages,org.apache.wicket.markup.html.panel,org.apache.wicket.ma
+ rkup.html.tree,org.apache.wicket.markup.html.tree.res,org.apache.wick
+ et.markup.loader,org.apache.wicket.markup.parser,org.apache.wicket.ma
+ rkup.parser.filter,org.apache.wicket.markup.renderStrategy,org.apache
+ .wicket.markup.repeater,org.apache.wicket.markup.repeater.data,org.ap
+ ache.wicket.markup.repeater.util,org.apache.wicket.markup.resolver,or
+ g.apache.wicket.markup.transformer,org.apache.wicket.mock,org.apache.
+ wicket.model,org.apache.wicket.model.util,org.apache.wicket.page,org.
+ apache.wicket.pageStore,org.apache.wicket.pageStore.memory,org.apache
+ .wicket.protocol.http,org.apache.wicket.protocol.http.documentvalidat
+ ion,org.apache.wicket.protocol.http.mock,org.apache.wicket.protocol.h
+ ttp.request,org.apache.wicket.protocol.http.servlet,org.apache.wicket
+ .protocol.https,org.apache.wicket.request,org.apache.wicket.request.c
+ omponent,org.apache.wicket.request.cycle,org.apache.wicket.request.ha
+ ndler,org.apache.wicket.request.handler.render,org.apache.wicket.requ
+ est.handler.resource,org.apache.wicket.request.mapper,org.apache.wick
+ et.request.resource,org.apache.wicket.request.resource.caching,org.ap
+ ache.wicket.request.resource.caching.version,org.apache.wicket.resour
+ ce,org.apache.wicket.resource.aggregation,org.apache.wicket.resource.
+ dependencies,org.apache.wicket.resource.filtering,org.apache.wicket.r
+ esource.loader,org.apache.wicket.response,org.apache.wicket.response.
+ filter,org.apache.wicket.serialize.java,org.apache.wicket.session,org
+ .apache.wicket.settings,org.apache.wicket.settings.def,org.apache.wic
+ ket.util.cookies,org.apache.wicket.util.crypt,org.apache.wicket.util.
+ file,org.apache.wicket.util.io,org.apache.wicket.util.iterator,org.ap
+ ache.wicket.util.lang,org.apache.wicket.util.resource,org.apache.wick
+ et.util.resource.locator,org.apache.wicket.util.resource.locator.cach
+ ing,org.apache.wicket.util.string,org.apache.wicket.util.string.inter
+ polator,org.apache.wicket.util.template,org.apache.wicket.util.tester
+ ,org.apache.wicket.validation,org.apache.wicket.validation.validator
+Bundle-Version: 1.5.0
+Bundle-Name: Wicket Core
+Bundle-Description: Wicket is a Java web application framework that ta
+ kes simplicity, 		separation of concerns and ease of development to a
+  whole new level. 		Wicket pages can be mocked up, previewed and late
+ r revised using 		standard WYSIWYG HTML design tools. Dynamic content
+  processing and 		form handling is all handled in Java code using a f
+ irst-class 		component model backed by POJO data beans that can easil
+ y be 		persisted using your favorite technology.
+Bundle-DocURL: http://apache.org
+Bundle-Vendor: Apache Software Foundation
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.apache.wicket.core
+Tool: Bnd-1.15.0
+DynamicImport-Package: *
+

@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Export-Package: com.gfactor.osgi.api.export.classes;version="1.0.0";uses:="org.apache.wicket.markup.html.panel",
+ com.gfactor.osgi.api.export.iface;version="1.0.0";uses:="org.springframework.security.core.userdetails",
+ com.gfactor.osgi.api.export.obj;version="1.0.0";uses:="org.springframework.security.core.userdetails",
+ com.gfactor.osgi.api.export.util;version="1.0.0";uses:="org.osgi.framework,org.springframework.context"
+Unversioned-Imports: *
+Built-By: momo
+Tool: Bnd-1.43.0
+Bundle-Name: Spring OSGi Bundle
+Created-By: Apache Maven Bundle Plugin
+Bundle-Version: 1.0.0
+Build-Jdk: 1.6.0_26
+Bnd-LastModified: 1312524270296
+Bundle-ManifestVersion: 2
+Import-Package: org.apache.wicket.markup.html.panel,
+ org.jdom,
+ org.jdom.input,
+ org.osgi.framework,
+ org.slf4j,
+ org.springframework.context,
+ org.springframework.core.io,
+ org.springframework.security.core,
+ org.springframework.security.core.authority,
+ org.springframework.security.core.userdetails
+Bundle-SymbolicName: plugin-webdomain-api
+

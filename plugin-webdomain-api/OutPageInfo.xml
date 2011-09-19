@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outpage>
+	<class name="com.gfactor.service.Home">
+		<pageinfo pagename="homeout1">
+			<entry_point>mains1</entry_point>
+			<bundleSymbolicName>com.test</bundleSymbolicName>
+			<version>1.0.0</version>
+		</pageinfo>
+		<pageinfo pagename="homeout2">
+			<entry_point>mains2</entry_point>
+			<bundleSymbolicName>com.test</bundleSymbolicName>
+			<version>1.0.0</version>
+		</pageinfo>
+	</class>
+	<class name="com.gfactor.service.Page">
+		<pageinfo pagename="pageout1">
+			<entry_point>mains1</entry_point>
+			<bundleSymbolicName>com.test</bundleSymbolicName>
+			<version>1.0.0</version>
+		</pageinfo>
+		<pageinfo pagename="pageout2">
+			<entry_point>mains2</entry_point>
+			<bundleSymbolicName>com.test</bundleSymbolicName>
+			<version>1.0.0</version>
+		</pageinfo>
+	</class>
+</outpage>

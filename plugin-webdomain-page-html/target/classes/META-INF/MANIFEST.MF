@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Export-Package: com.gfactor.page.html.internal.page;version="1.0.0";us
+ es:="org.apache.wicket.markup.html",com.gfactor.page.html.internal.re
+ g;version="1.0.0";uses:="com.gfactor.tracker.iface,org.osgi.framework
+ ,org.springframework.osgi.context"
+Unversioned-Imports: *
+Built-By: momo
+Tool: Bnd-1.43.0
+Import-Library: org.springframework.spring;version="[3.0.3, 3.1)"
+Bundle-Name: Spring OSGi Bundle
+Created-By: Apache Maven Bundle Plugin
+Bundle-Version: 1.0.0
+Build-Jdk: 1.6.0_26
+Bnd-LastModified: 1313999400984
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: plugin-webdomain-page-html
+Import-Package: com.gfactor.osgi.api.export.util,com.gfactor.tracker.i
+ face,org.apache.wicket,org.apache.wicket.markup.html,org.apache.wicke
+ t.markup.html.image,org.apache.wicket.request.resource,org.osgi.frame
+ work,org.slf4j,org.springframework.osgi.context
+

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Built-By: momo
+Build-Jdk: 1.6.0_26
+Bundle-Version: 1.0.0
+Tool: Bnd-1.43.0
+Bundle-Name: Spring OSGi Bundle
+Bnd-LastModified: 1313999400984
+Created-By: Apache Maven Bundle Plugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: plugin-webdomain-page-html
+Import-Library: 
+ org.springframework.spring;version="[3.0.3, 3.1)" 
+Unversioned-Imports: 
+ *

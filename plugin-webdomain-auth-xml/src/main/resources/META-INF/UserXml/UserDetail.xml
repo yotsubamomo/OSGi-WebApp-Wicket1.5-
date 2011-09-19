@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<root>
+	<user>
+		<Username>yotsuba</Username>
+		<Password>xenogears</Password>
+		<AccountNonExpired>true</AccountNonExpired>
+		<CredentialsNonExpired>true</CredentialsNonExpired>
+		<AccountNonLocked>true</AccountNonLocked>
+		<Enable>true</Enable>
+		<Mail>test@gmail.com</Mail>
+		<GrantedAuthorities>
+			<Role>ROLE_ADMIN</Role>
+			<Role>ROLE_USER</Role>
+			<Role>ROLE_GUEST</Role>
+		</GrantedAuthorities>
+	</user>
+	<user>
+		<Username>guest</Username>
+		<Password>guest</Password>
+		<AccountNonExpired>true</AccountNonExpired>
+		<CredentialsNonExpired>true</CredentialsNonExpired>
+		<AccountNonLocked>true</AccountNonLocked>
+		<Enable>true</Enable>
+		<Mail>test@gmail.com</Mail>
+		<GrantedAuthorities>
+			<Role>ROLE_GUEST</Role>
+		</GrantedAuthorities>
+
+	</user>
+</root>

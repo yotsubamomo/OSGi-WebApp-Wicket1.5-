@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Export-Package: com.gfactor.pageinfo.service;version="1.0.0";uses:="co
+ m.gfactor.pageinfo.jpa"
+Unversioned-Imports: *
+Built-By: momo
+Tool: Bnd-1.43.0
+Import-Library: org.springframework.spring;version="[3.0.3,3.1)"
+Bundle-Name: Spring OSGi Bundle for jpa bundle service layer
+Created-By: Apache Maven Bundle Plugin
+Import-Bundle: org.eclipse.persistence.jpa;version="[2.0.0,2.4.0]"
+Bundle-Version: 1.0.0
+Build-Jdk: 1.6.0_26
+Bnd-LastModified: 1313477275968
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: plugin-webdomain-service-pageinfo
+Import-Package: com.gfactor.pageinfo.dao,
+ com.gfactor.pageinfo.jpa,
+ org.springframework.beans.factory.annotation,
+ org.springframework.transaction,
+ org.springframework.transaction.annotation,
+  net.sf.cglib.proxy,
+ net.sf.cglib.core,
+ net.sf.cglib.reflect,
+ org.aspectj.lang,
+ org.aspectj.runtime.reflect,
+ org.slf4j
+

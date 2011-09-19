@@ -1,0 +1,21 @@
+Notes:
+OSGi-WebApp-Wicket1.5- run on Eclipse Virgo 3.0.1 
+The project contains those framework as below:
+
+Spring Framework 3.0.5
+Spring Security 3.0.5
+Wicket 1.5.0
+Wiquery 1.5-M2
+JPA 1.0/2.0 with EclipseLink 2.x
+
+
+
+Development Environment :
+JDK 1.6
+Eclipse 3.7 Indigo 
+Eclipse 3.7 plugin for SpringSource Tool Suite
+Eclipse Virgo IDE 1.0
+and other
+
+
+

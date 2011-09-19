@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outpage>
+	<class name="com.gfactor.page.main.HomePage">
+		<pageinfo pagename="homeout1">
+			<entry_point>imagePage1</entry_point>
+			<bundleSymbolicName>plugin-webdomain-page-html</bundleSymbolicName>
+			<version>1.0.0</version>
+		</pageinfo>
+	</class>	
+</outpage>

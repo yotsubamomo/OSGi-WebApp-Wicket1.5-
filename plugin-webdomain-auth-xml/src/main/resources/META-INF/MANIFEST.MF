@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Export-Package: com.gfactor.auth.xml;version="1.0.0";
+  uses:="com.gfactor.auth.xml.internal,
+   com.gfactor.osgi.api.export.iface,
+   org.springframework.beans,
+   org.springframework.context,
+   org.springframework.dao,
+   org.springframework.security.core.userdetails"
+Unversioned-Imports: *
+Built-By: momo
+Tool: Bnd-1.43.0
+Bundle-Name: Spring OSGi Bundle
+Created-By: Apache Maven Bundle Plugin
+Bundle-Version: 1.0.0
+Build-Jdk: 1.6.0_26
+Bnd-LastModified: 1312871722031
+Bundle-ManifestVersion: 2
+Import-Package: com.gfactor.osgi.api.export.iface,
+ com.gfactor.osgi.api.export.obj,
+ com.gfactor.osgi.api.export.util,
+ org.jdom,
+ org.jdom.input,
+ org.slf4j,
+ org.springframework.beans,
+ org.springframework.beans.factory.annotation,
+ org.springframework.context,
+ org.springframework.core.io,
+ org.springframework.dao,
+ org.springframework.security.core.authority,
+ org.springframework.security.core.userdetails
+Bundle-SymbolicName: plugin-webdomain-auth-xml
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:osgi="http://www.springframework.org/schema/osgi">
+
+  <!-- regular spring configuration file defining the beans for this
+       bundle. The configuration of OSGi definitions is kept in a separate 
+       configuration file so that this file can easily be used
+       for integration testing outside of an OSGi environment -->
+       <!-- 
+       <bean id="actavitor" class="com.gfactor.page.main.Activator"
+		init-method="start" destroy-method="stop">
+		<property name="wicketService" ref="iwicketService" />
+		<property name="wicketPageService" ref="iwicketPageService" />
+	</bean>
+	 --> 
+	 <context:component-scan base-package="com.gfactor.page.main"/>
+	 <bean id="mainPageService" class="com.gfactor.page.main.internal.GetMainPageServiceImpl"></bean>
+	 <bean id="getMainPagetOutService" class="com.gfactor.page.main.internal.GetOutPageInfoServiceImpl"></bean>
+</beans>

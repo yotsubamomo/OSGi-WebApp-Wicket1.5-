@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Built-By: momo
+Build-Jdk: 1.6.0_26
+Bundle-Version: 1.0.0
+Tool: Bnd-1.43.0
+Bundle-Name: Spring OSGi Bundle for mysql datasource service
+Bnd-LastModified: 1313475099750
+Created-By: Apache Maven Bundle Plugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: plugin-webdomain-datasource
+Excluded-Exports: 
+ *.internal*
+Unversioned-Imports: 
+ *

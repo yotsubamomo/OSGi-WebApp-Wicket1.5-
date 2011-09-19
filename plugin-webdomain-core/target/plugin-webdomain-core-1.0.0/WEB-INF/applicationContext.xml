@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:osgi="http://www.springframework.org/schema/osgi">
+	
+	
+	<context:component-scan base-package="com.gfactor" />
+		
+	<!-- Spring Security 3 setting start -->
+	<security:http create-session="never" auto-config="true">
+		<security:intercept-url pattern="/**" />
+	</security:http>
+	 
+	<security:global-method-security
+		secured-annotations="enabled" />
+
+	<security:authentication-manager alias="authenticationManager">
+		<security:authentication-provider user-service-ref="abstractUserDetailService" />
+	</security:authentication-manager>
+
+	<!-- osgi service reference for authentication 
+	<osgi:reference id="abstractAuthenticationProvider" interface="com.gfactor.export.AbstractAuthenticationProvider"/>
+	-->
+	<osgi:reference id="abstractUserDetailService" interface="com.gfactor.export.iface.AbstractUserDetailService"/>
+	
+	
+	 <!-- Web Application Bean setting Start -->	
+	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+	
+	<!-- enable anntotation-driven controllers -->
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+	
+	
+	<!-- defined wicket setting bean objects. -->
+	
+	<bean id="osgiClassResolver" class="com.gfactor.web.wicket.loader.OsgiClassResolver"/>
+					
+	<bean id="wicketApplication" class="com.gfactor.web.wicket.context.WicketApplication"/>
+	
+	<!-- defined osgi reference for get page classes..... -->	
+	<osgi:reference id="mainPageService" interface="com.gfactor.export.iface.IGetMainPageClassService"></osgi:reference>
+	
+	<!-- for test bundle class dependency without fresh bundle when bundle update or remove 
+	<osgi:reference id="osgiClassResolver" interface="org.apache.wicket.application.IClassResolver"></osgi:reference>
+	-->
+</beans>

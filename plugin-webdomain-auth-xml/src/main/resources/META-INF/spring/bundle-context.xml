@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<!-- regular spring configuration file defining the beans for this bundle. 
+		The configuration of OSGi definitions is kept in a separate configuration 
+		file so that this file can easily be used for integration testing outside 
+		of an OSGi environment -->
+		
+	<context:annotation-config></context:annotation-config>
+	<bean id="ctxRsLoader" class="com.gfactor.auth.xml.internal.ContextResourceLoader" />
+	<bean id="xmlReader" class="com.gfactor.auth.xml.internal.XmlAcctReader"></bean>
+	<bean id="XmlUserDetailService" class="com.gfactor.auth.xml.XmlUserDetailService">
+		<property name="xmlReader" ref="xmlReader"></property>
+	</bean>
+	
+	<bean id="bundleActivator" class="com.gfactor.auth.xml.BundleActivator" 
+	init-method="start" destroy-method="stop"/>
+</beans>

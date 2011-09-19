@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Unversioned-Imports: *
+Build-Jdk: 1.6.0_26
+Built-By: momo
+Bundle-Version: 1.0.0
+Tool: Bnd-1.43.0
+Bnd-LastModified: 1313477275968
+Bundle-Name: Spring OSGi Bundle for jpa bundle service layer
+Bundle-ManifestVersion: 2
+Created-By: Apache Maven Bundle Plugin
+Bundle-SymbolicName: plugin-webdomain-service-template
+

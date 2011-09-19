@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Export-Package: com.gfactor.page.main;version="1.0.0";
+  uses:="javax.inject,
+   org.apache.wicket.markup.html,
+   org.odlabs.wiquery.core.events,
+   org.odlabs.wiquery.core.javascript,
+   org.odlabs.wiquery.ui.dialog"
+Unversioned-Imports: *
+Built-By: momo
+Tool: Bnd-1.43.0
+Bundle-Name: Spring OSGi Bundle
+Created-By: Apache Maven Bundle Plugin
+Bundle-Version: 1.0.0
+Build-Jdk: 1.6.0_26
+Bnd-LastModified: 1312943989781
+Bundle-ManifestVersion: 2
+Import-Package: com.gfactor.locate,
+ com.gfactor.osgi.api.export.iface,
+ com.gfactor.osgi.api.export.util,
+ javax.inject,
+ org.apache.wicket,
+ org.apache.wicket.behavior,
+ org.apache.wicket.markup.html,
+ org.apache.wicket.markup.html.form,
+ org.apache.wicket.markup.html.link,
+ org.odlabs.wiquery.core.events,
+ org.odlabs.wiquery.core.javascript,
+ org.odlabs.wiquery.ui.dialog,
+ org.slf4j,
+ org.springframework.beans,
+ org.springframework.context
+Bundle-SymbolicName: plugin-webdomain-mainpage
+
